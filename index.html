@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>ФТПЗ</title>
+</head>
+<body>
+    <div class="mainbox">
+        <h1 id="title">Кредитный калькулятор</h1>
+        <div id="maindiv">
+            <div id="firstColomn">
+                <div class="content"><label>Сумма кредита<input type="number" min="1000" placeholder="10000" onchange="check()" value="1000">грн.</label></div>
+                <div class="content"><label>Срок кредита<input type="number" min="1" placeholder="3" onchange="check()" value="1">лет</label></div>
+                <div class="content"><label>Процентная ставка</label><label id="percent">15</label> %</div>               
+            </div>
+            <div id="secondColomn">
+                <p id="sumDesc">Итого: </p>
+                <p id="sum">0</p>
+                <p id="currency">грн.</p>
+            </div>
+        </div>
+        <button onclick="calculate()">Рассчитать</button>
+    </div>
+</body>
+</html>
